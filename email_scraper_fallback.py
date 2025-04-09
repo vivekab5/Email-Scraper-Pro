@@ -39,6 +39,8 @@ def extract_emails_from_soup(soup):
 
     return list(set(normal_emails + obfuscated_fixed))
 
+# get web
+
 def scrape_emails_from_url(url):
     session = requests.Session()
     proxy = get_random_proxy()
